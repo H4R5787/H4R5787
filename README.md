@@ -1,44 +1,78 @@
-name: Deploy portfolio to GitHub Pages
+<div align="center">
+Hi, I'm Harsh Vishwakarma 👋
+Cybersecurity | Application Security | DevSecOps | Systems Programming
+I build practical security tools, explore low-level systems, and develop automation projects that solve real-world problems.
+GitHub LinkedIn TryHackMe
+</div>
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+👨‍💻 About Me
+🛡️ DevOps Engineer – Cyber Security at Tata Consultancy Services (TCS).
+🔐 Interested in application security, DAST, API security testing, and vulnerability assessment.
+💻 Build projects using Python, Rust, JavaScript, and modern development tools.
+⚙️ Developing HarshOS, a bare-metal x86_64 operating system written in Rust.
+🤖 Exploring AI-powered applications and workflow automation.
+🧪 Practising cybersecurity through hands-on labs and TryHackMe.
+🤝 Open to collaborating on cybersecurity, automation, and open-source projects.
+🛠️ Technical Skills
+Programming Languages
+Python Rust JavaScript HTML5 CSS3
+Cybersecurity
+Burp Suite OWASP ZAP Nmap Wireshark Veracode
+Frameworks & Tools
+Flask React Bootstrap MySQL Git Linux
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+🚀 Featured Projects
+🦠 VirusGuard
+A file-scanning application that integrates the VirusTotal API with AI-powered explanations to help users understand scan results.
+Tech Stack: Python, Flask, MySQL, Bootstrap, VirusTotal API, Llama 3
+⚙️ HarshOS
+A bare-metal x86_64 operating system written in Rust. Explores kernel development, memory management, interrupt handling, keyboard input, and an interactive shell.
+Tech Stack: Rust, x86_64, Operating Systems, Memory Management
+📚 StudyMate
+An AI-powered study assistant designed to help users explore study materials, generate practice questions, and track learning progress.
+Tech Stack: Python, Flask, TensorFlow Lite, Machine Learning
+🤖 AI Social Media Publishing Pipeline
+An automation pipeline that generates platform-specific content and supports publishing workflows across social media platforms.
+Tech Stack: Python, Gemini API, YouTube API, Meta APIs, Automation
+🐧 Python OS Simulator
+A Python project exploring operating-system concepts through a simulated environment.
+Tech Stack: Python
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
+💼 Experience
+DevOps Engineer – Cyber Security | Tata Consultancy Services (TCS)
+December 2025 – Present
+Application security testing for enterprise applications.
+Dynamic Application Security Testing (DAST) and API security testing.
+Veracode onboarding, scan validation, and vulnerability remediation collaboration.
+Authentication testing involving MFA and SSO.
+Cybersecurity Intern | Acmegrade
+January 2024 – March 2024
+Practised web penetration testing and network scanning.
+Explored vulnerability assessment and payload testing.
+Studied the Cyber Kill Chain and security testing concepts.
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+🏆 Certifications & Achievements
+Google Cybersecurity Professional Certificate — Coursera
+Ethical Hacker Certification — Cisco
+Top 100 — TCS HackQuest Season 9
+Hands-on cybersecurity practice through TryHackMe
+🎓 Education
+Bachelor of Science in Computer Science
+Shankar Narayan College of Arts & Commerce | 2022–2025
 
-      - name: Assemble site (only the files the site needs)
-        run: |
-          mkdir -p _site
-          cp index.html _site/
-          cp -r css js assets _site/
-          touch _site/.nojekyll
+📊 GitHub Statistics
+<div align="center">
+GitHub Stats
+Top Languages
+</div>
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+📫 Connect With Me
+📧 Email: vishwakarma.harsh.office@gmail.com
+💻 GitHub: H4R5787
+💼 LinkedIn: Connect with me
+🛡️ TryHackMe: View my profile
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+<div align="center">
+Building secure applications. Exploring systems. Automating intelligently.
+Thanks for visiting my profile! Feel free to explore my repositories and connect with me.
+</div>
